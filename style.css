@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
 :root{
     --green: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
@@ -33,13 +35,85 @@ main{
     border-radius: 1rem;
 }
 
-img{
-    /* overflow: hidden; */
-    /* object-fit: contain; */
+.image-product{
     width: 100%;
     height: auto;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.text-section{
+    margin: 10%;
+}
+
+.category{
+    margin-bottom: 2rem;
+    letter-spacing: 0.45rem;
+    color: var(--light);
+    font-weight: 500;
+}
+
+h1{
+    margin: 0 5rem 2rem 0;
+    font-family: var(--stylish);
+    font-weight: 700;
+    font-size: 3rem;
+    /* border: red 1px solid; */
+}
+
+.description{
+    margin: 0 4rem 2.5rem 0;
+    color: var(--light);
+    line-height: 2.25rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    /* border: red 1px solid; */
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    margin: 0 0 2.75rem 0;
+}
+
+.pricing-deal{
+    margin-right: 2rem;
+    font-size: 2.85rem;
+    font-weight: 700;
+    color: var(--green);
+    font-family: var(--stylish);
+}
+
+.pricing-original{
+    text-decoration: line-through;
+    color: var(--light);
+}
+
+button{
+    background: var(--green);
+    padding: 1.5rem 0;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-cart{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+.cart-text{
+    font-size: 1.5rem;
+    color: var(--white);
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
