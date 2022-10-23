@@ -22,11 +22,21 @@ body{
     position: relative;
 }
 
+.reference{
+    position: fixed;
+    width: 128rem;
+    z-index: -2;
+    filter:opacity(0);
+    border: 1px solid red;
+
+}
+
 main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 12.5%);
+    transform: translate(-50%, 13%);
+    /* transform:scale(88.9%); */
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: var(--white);
@@ -43,29 +53,32 @@ main{
 }
 
 .text-section{
-    margin: 10%;
+    margin: 11.5% 11.1%;
     /* grid-area: text; */
 }
 
 .category{
     margin-bottom: 2rem;
-    letter-spacing: 0.45rem;
+    letter-spacing: 0.6rem;
     color: var(--light);
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h1{
-    margin: 0 5rem 2rem 0;
+    margin: 0 1rem 2.6rem 0;
     font-family: var(--stylish);
     font-weight: 700;
     font-size: 3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.1rem;
     /* border: red 1px solid; */
 }
 
 .description{
-    margin: 0 4rem 2.5rem 0;
+    margin: 0 0.5rem 2.85rem 0;
     color: var(--light);
     line-height: 2.25rem;
+    letter-spacing: 0.08rem;
     font-weight: 500;
     font-size: 1.2rem;
     /* border: red 1px solid; */
@@ -74,25 +87,28 @@ h1{
 .pricing{
     display: flex;
     align-items: center;
-    margin: 0 0 2.75rem 0;
+    margin: 0 0 2.65rem 0;
 }
 
 .pricing-deal{
-    margin-right: 2rem;
+    margin-right: 1.7rem;
     font-size: 2.85rem;
     font-weight: 700;
     color: var(--green);
     font-family: var(--stylish);
+    letter-spacing: 0.19rem;
+    /* border: red 1px solid; */
 }
 
 .pricing-original{
     text-decoration: line-through;
     color: var(--light);
+    font-size: 1.3rem;
 }
 
 button{
     background: var(--green);
-    padding: 1.5rem 0;
+    padding: 1.45rem 0;
     width: 100%;
     border-radius: 1rem;
     border: none;
@@ -105,13 +121,14 @@ button:hover{
 }
 
 .icon-cart{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     width: 2rem;
 }
 
 .cart-text{
     font-size: 1.5rem;
     color: var(--white);
+    /* letter-spacing: 0.01rem; */
 }
 
 footer{
